@@ -1,0 +1,12 @@
+llama-3.2-3b
+skillforge-adapters-v3
+skillvault_mlx
+skillforge-v3-merged
+skillforge-v3-lora-final
+skillvault_data
+skillvault_mlx
+skillforge-adapters
+skillforge-adapters-v2
+venv
+*.md
+*.sh
