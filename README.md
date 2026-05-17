@@ -56,3 +56,37 @@ print(result[0]['generated_text'])
 
 The training dataset (SkillVault) is available at:
 `ekesel/skillvault`
+
+
+---
+language: [en]
+license: mit
+tags: [agent-skills, skill-files, claude-code, llm-instructions, ai-tools]
+---
+
+# SkillVault Dataset
+
+The world's first assembled dataset of AI agent SKILL.md files.
+
+Scraped from **126 GitHub repos** across Anthropic, Vercel,
+Cloudflare, Stripe, Neon, ClickHouse, and the broader community.
+
+## Stats
+- **Skills collected:** 3568
+- **Training pairs:** 14697
+- **Source repos:** 126
+- **Avg skill length:** 1106 words
+
+## Training Pair Types
+- `generate_from_description`: 3551
+- `describe_skill`: 3551
+- `generate_from_usecase`: 3568
+- `skillforge_generate`: 3568
+- `trigger_conditions`: 459
+
+## Usage
+```python
+from datasets import load_from_disk
+ds = load_from_disk("./skillvault_data/hf_dataset")
+print(ds["train"][0])
+```
